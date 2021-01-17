@@ -1,11 +1,3 @@
-           ;       Overall Idea
-           ;       The algorithm recursively performs Karatsuba multiplication,
-           ;       from 64 digits to 32, 16, ..., 4, with base case of 2 BCD
-           ;       digit multiplication, which will be done in the Look Up Table
-
-
-
-
 BCDBIGMUL  STMFD   SP!, {R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, LR}
            ;       Input number sign determination
            ;       Perform 10's compliment to obtain absolute value if negetive
@@ -725,6 +717,3 @@ RESULT81   FILL    32
 RESULT82   FILL    32
 RESULT83   FILL    32
 RESULT84   FILL    32
-
-
-
